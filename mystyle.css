@@ -1,0 +1,28 @@
+#main_div {
+    width:550px;
+}
+
+#legend_style
+{
+	color:blue;
+	font-weight:bold;
+	font-size: 1.3em;
+}
+h3
+{
+	font-size: 1.2em;
+}
+
+h4
+{
+	font-size: 1.15em;
+}
+label
+{
+	font-size: 1.2em;
+}
+input[type="radio"]:checked+label
+{ font-weight: bold;
+font-size: 1.3em;
+color: green
+ } 

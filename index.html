@@ -1,0 +1,104 @@
+<html>
+<head>
+	<script src="jquery-1.12.0.js"></script>
+	<script src="div_effect.js"></script>
+	<script src="prime_check.js"></script>
+	<script src="palindrome.js"></script>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	</head>
+<body>
+<center>
+
+
+<div id="main_div">
+   <fieldset>
+      <legend id="legend_style">Math Operations</legend>
+      <table>
+         <tr>
+            <td>
+
+ 
+<div id="radio_buttons_group">
+    
+    <input type="radio" name="math_group" checked="checked" value="calculator"  />
+    <label for="calculator">Calculator</label>
+	
+    <input type="radio" name="math_group" value="prime_check" />
+    <label for="prime">Prime Checker</label>
+    
+    <input type="radio" name="math_group" value="palin_check" /></h3>
+    <label for="palindrome">Palindrome Checker</label>
+    
+    <br><br>
+ 	<!-- Calculator div-->
+		    <div id="calc_div">
+		    
+				    <form name="calculator" >
+				    <h4>Solution</h4><input type="textfield" name="result" value="">
+				    <br>
+				    <table><tr>
+				    <td><input type="button" value="1" onClick="document.calculator.result.value+='1'"></td>
+				    <td><input type="button" value="2" onClick="document.calculator.result.value+='2'"></td>
+				    <td><input type="button" value="3" onClick="document.calculator.result.value+='3'"></td>
+				    <td><input type="button" value="+" onClick="document.calculator.result.value+='+'"></td>
+				    </tr>
+				    <br>
+				    <tr>
+				    <td><input type="button" value="4" onClick="document.calculator.result.value+='4'"></td>
+				    <td><input type="button" value="5" onClick="document.calculator.result.value+='5'"></td>
+				    <td><input type="button" value="6" onClick="document.calculator.result.value+='6'"></td>
+				    <td><input type="button" value="-" onClick="document.calculator.result.value+='-'"></td>
+				</tr>
+				    <br>
+				    <tr>
+				    <td><input type="button" value="7" onClick="document.calculator.result.value+='7'"></td>
+				    <td><input type="button" value="8" onClick="document.calculator.result.value+='8'"></td>
+				    <td><input type="button" value="9" onClick="document.calculator.result.value+='9'"></td>
+				    <td><input type="button" value="*" onClick="document.calculator.result.value+='*'"></td>
+				</tr>
+				    <br>
+				    <tr>
+				    <td><input type="button" value="0" onClick="document.calculator.result.value+='0'"></td>
+
+				    <td><input type="button" value="=" onClick="document.calculator.result.value=eval(document.calculator.result.value)"></td>
+				    <td><input type="button" value="/" onClick="document.calculator.result.value+='/'"></td>
+				        <td><input type="reset" value="Reset"></td>
+				</tr>
+				    </table>
+				    </form>
+		    </div>
+<!-- Calculator div ends-->
+
+<!-- Primer checker div-->
+		    <div id="prime_div" style="display: none;">
+		        <form name="form">
+				<h4>Please enter a number:</h4>
+				<input type="text" name="number" size="7">
+				<input type="button" value="Check" onClick="prime_calc(this.form)">
+				<P>
+				<input type="text" name="result" size="45" value="">
+				</form>
+		    </div>
+<!-- Primer checker div ends-->
+
+<!-- Palindrome checker div-->
+		    <div id="palin_div" style="display: none;">
+		        <form name="form2">
+				<h4>Please enter input:</h4>
+				<input type="text" id="inputdata" size="7">
+				<input type="button" value="Verify" onClick="palindrome()">
+				<P>
+				<input type="text" id="result2" value="">
+				</form>
+		    </div>
+<!-- Palindrome checker div ends-->
+ </center>
+</div>
+
+  </td>
+         </tr>
+      </table>
+   </fieldset>
+</div>
+</body>
+</html>
